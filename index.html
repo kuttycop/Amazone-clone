@@ -19,73 +19,71 @@
         <div class="logo">
             <img src="images/logo.png" alt="logo">
         </div>
-        <div class="location">
+        <div class="location" onclick="locationshow()">
             <i class="fa-solid fa-location-dot"></i>
         <div class="location-text">
             <span>Deliver to</span>
             <h5>India</h5>
         </div>
-    </div>
+        </div>
         <div class="search">
-            <span>
-                <select>All
-                    <option value="All">All</option>
-                <option value="toys">toys</option>
-                <option value="beauty">beauty</option>
-                <option value="games">games</option>
-                </select>
-            </span>
-            <input type="search" placeholder="Search Amazon.in">
-            <i class="fa-solid fa-search"></i>
+            <div class="nav-search-catagory" onclick="Allpopup()">
+                <p>All</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <input type="search" class="nav-search-input" placeholder="Search Amazon.in">
+            <i class="fa-solid fa-search" id="nav-search-icon"></i>
         </div>
         <div class="language">
-            <select>
-                <option value="">EN</option>
-                <option value="">ERO</option>
-                <option value="">UK</option>
-
-            </select>
+           <img src="./images/flag2.png" alt="flag" width="25px">
+           <p>EN</p>
+           <i class="fa-solid fa-caret-down"></i>
         </div>
         <div class="login">
-            <span>Hello, sign in</span>
-            <select>
-                <option value="">Accounts&Lists</option>
-                <option value="">Lists</option>
-                <option value="">Accounts</option>
-            </select>
+            <p class="login-p">Hello, sign in</p>
+            <h1 class="login-h1"><a href="register.html">Account & Lists <i class="fa-solid fa-caret-down"></i> </a></h1>
         </div>
-        <div class="returnorder">
-            <span class="return">Returns</span>
-            <span class="order">&Orders</span>
+        <div class="login">
+            <p>Returns</p>
+            <h1>&Orders</h1>
         </div>
         <div class="cart">
             <i class="fa-solid fa-cart-shopping"></i>
             <p>Cart</p>
         </div>
-    </nav>
-    <nav class="under-nave" id="nav2">
+</nav>
+<nav class="under-nave" id="nav2">
         <div class="side-icon">
             <i class="fa-solid fa-bars"></i>
             <p>All</p>
         </div>
         <div class="side-nav-lists">
             <ul>
+                <li>Amazon miniTV</li>
+                <li>Sell</li>
+                <li>Best Sellers</li>
                 <li>Today's Deals</li>
+                <li>Mobiles</li>
                 <li>Customer Service</li>
+                <li class="Prime">Prime <i class="fa-solid fa-caret-down"></i></li>
                 <li>Registry</li>
                 <li>Gift Cards</li>
-                <li>Sell</li>
+                <li>Fashion</li>
             </ul>
         </div>
-    </nav>
-    <section class="hero-slide-image">
-        <div class="hero-image">
-            <i class="fa-solid fa-chevron-left"></i>
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
-        <p>You are on amazon.com. You can also shop on amazon india for millions of products with fast local delivery. Click here to go to amazon.in</p>
-    </section>
-<section class="hero-section">
+</nav>
+<section class="header-slider">
+    <a href="#" class="control_prev">&#129144</a>
+    <a href="#" class="control_next">&#129146</a>
+        <ol>
+            <img src="./images/hero3.jpg" class="header-img" alt="">
+            <img src="./images/hero2.jpg" class="header-img" alt="">
+            <img src="./images/hero4.jpg" class="header-img" alt="">
+            <img src="./images/hero5.jpg" class="header-img" alt="">
+            <img src="./images/hero_image.jpg" class="header-img" alt="">
+        </ol>
+</section>
+<section class="hero-section slider-up">
     <div class="gaming">
         <h1>Gaming accessories</h1>
         <div class="box-1">
@@ -104,7 +102,7 @@
             <img src="./images/game4.jpg" alt="game acc">
             <p>Headphone</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Shop now</a></p>
     </div>
     <div class="gaming">
         <h1>Refresh your space</h1>
@@ -124,7 +122,7 @@
             <img src="./images/refresh3.jpg" alt="game acc">
             <p>Areca Palm</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">See more</a></p>
     </div>
     <div class="gaming">
         <h1>Shop deals in Fashion</h1>
@@ -144,7 +142,7 @@
             <img src="./images/fashion4.jpg" alt="game acc">
             <p>Only</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Explore More</a></p>
     </div>
     <div class="gaming">
         <h1>Deals in PCs</h1>
@@ -156,7 +154,7 @@
             <img src="./images/pc2.jpg" alt="pc"style="width: 300px;">
             <p> PC for Home </p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">See best PCs</a></p>
     </div>
 </section>
 <section class="hero-section2">
@@ -165,7 +163,7 @@
         <div class="box-1">
             <img src="./images/toys1.jpg" alt="Game acc" style="width: 300px;height: 340px;" >
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Shop now</a></p>
     </div>
     <div class="gaming">
         <h1>Fashion trends you like</h1>
@@ -185,14 +183,14 @@
             <img src="./images/fashion2.4.jpg" alt="game acc">
             <p>Treditional</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Explore more</a></p>
     </div>
     <div class="gaming">
         <h1>Beauty steals under $25</h1>
         <div class="box-1">
             <img src="./images/beauty steal.jpg" alt="Game acc" style="width: 300px;height: 340px;" >
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Shop now</a></p>
     </div>
     <div class="gaming">
         <h1>Elevated spaces</h1>
@@ -212,7 +210,7 @@
             <img src="./images/elevated4.jpg" alt="game acc">
             <p>CUZAYA</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Shop More Products</a></p>
     </div>
 </section>
 
@@ -260,14 +258,14 @@
             <img src="./images/game-merge4.jpg" alt="game acc">
             <p>Naruto Kunai</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">See more</a></p>
     </div>
     <div class="gaming">
         <h1>Shop smartwatches</h1>
         <div class="box-1">
             <img src="./images/smartwatches.jpg" alt="Game acc" style="width: 300px;height: 340px;" >
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Shop now</a></p>
     </div>
     <div class="gaming">
         <h1>Warm & Welcome decor</h1>
@@ -287,14 +285,14 @@
             <img src="./images/welcome4.jpg" alt="game acc">
             <p>Wall Hanger</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Shop more fall finds</a></p>
     </div>
     <div class="gaming">
         <h1>Great prices on shoes</h1>
         <div class="box-1">
             <img src="./images/great-price-shoes.jpg" alt="Game acc" style="width: 300px;height: 340px;" >
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">See more</a></p>
     </div>
 </section>
 
@@ -330,7 +328,7 @@
         <div class="box-1">
             <img src="./images/gaming-paradise.jpg" alt="Game acc" style="width: 300px;height: 340px;" >
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">Shop video games</a></p>
     </div>
     <div class="gaming">
         <h1>Level up Beauty</h1>
@@ -350,7 +348,7 @@
             <img src="./images/level-beauty4.jpg" alt="game acc">
             <p>Vitamin E</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">See more</a></p>
     </div>
     <div class="gaming">
         <h1>Top PCs & Accessories</h1>
@@ -370,7 +368,7 @@
             <img src="./images/score-pc-acc4.jpg" alt="game acc">
             <p>Microphone Mic</p>
         </div>
-        <p><a href="#">Shop More..</a></p>
+        <p><a href="#">See More</a></p>
     </div>
     <div class="gaming">
         <h1>New Way to work</h1>
@@ -399,7 +397,7 @@
 <footer class="footer1">
     <div class="foot1-content">
         <p>See personalized recommendations</p>
-        <button>Sign in</button>
+        <button><a href="register.html">Sign in</a></button>
         <p>New customer? <a href="">Start here.</a></p>
     </div>
 </footer>
@@ -452,7 +450,10 @@
             </div>
             <div class="foot3-buttons">
                 <input type="number" placeholder="English">
-                <p><img src="" alt="flage">India</p>
+                <div class="flage-sect">
+                    <img src="./images/flag2.png" alt="flage" width="25px">
+                    <p>India</p>
+                </div>
             </div>
         </div>
 </footer>
@@ -514,6 +515,195 @@
     </div>
 </footer>
 
+<div class="All-popup">
+        <p>All Categories</p>
+        <p>Alexa Skills</p>
+        <p>Amazon Devices</p>
+        <p>Amazon Fashion</p>
+        <p>Amazon Pharmacy</p>
+        <p>Appliances</p>
+        <p>Apps & Games</p>
+        <p>Audiable Audiobook</p>
+        <p>Baby</p>
+        <p>Beauty</p>
+        <p>Books</p>
+        <p>Car & Motorbike</p>
+        <p>Clothing & Accessories</p>
+        <p>collectibles</p>
+        <p>Computer & Accessories</p>
+        <p>Deals</p>
+        <p>Electronics</p>
+        <p>Furniture</p>
+        <p>Garden & Outdoors</p>
+        <p>Gift Cards</p>
+        <p>Grocery & Gourmet Foods</p>
+        <p>Health & Personal Care</p>
+        <p>Home & Kitchen</p>
+        <p>Industrial & Scientific</p>
+        <p>Jewellery</p>
+        <p>Kindle Store</p>
+        <p>Luggage & Bags</p>
+        <p>Luxury Beauty</p>
+        <p>Movies & TV Shows</p>
+        <p>MP3 Music</p>
+        <p>Musical Instruments</p>
+        <p>Office Products</p>
+        <p>Pet Supplies</p>
+        <p>Prime Video</p>
+        <p>Shoes & Handbags</p>
+        <p>Software</p>
+        <p>Sports, Fitness & Outdoors</p>
+        <p>Subscribe & Save</p>
+        <p>Tools & Home Improvement</p>
+        <p>Toys & Games</p>
+        <p>Under $500</p>
+        <p>Video Games</p>
+        <p>Watches</p>
+</div>
+<div class="location-popup"></div>
+<div class="location-overlay">
+    <div class="location-overlay-heading">
+        <h3>Choose your location</h3>
+        <i class="fa-solid fa-xmark" onclick="locationhide()"></i>
+    </div>
+    <p class="location-para1">Select a delivery location to see product availability and delivery options</p>
+    <button class="location-overlay-signinbtn">Sign in to see your addresses</button>
+    <p class="pincode">or enter an Indian pincode</p>
+    <div class="location-popup-input">
+        <input type="text">
+        <button>Apply</button>
+    </div>
+    <div class="donebtn">
+      <button onclick="locationhide()">Done</button>
+    </div>
+</div>
+
+
+<div class="language-popup-overlay"></div>
+<div class="language-radio-buttons">
+    <form action="">
+        <label for="english">
+            <input type="radio" id="english"  name="language">
+            <span>English-EN</span>
+        </label>
+        <label for="tamil">
+            <input type="radio" id="tamil"  name="language">
+            <span>தமிழ்-TM</span>
+        </label>
+        <label for="hindi">
+            <input type="radio" id="hindi" name="language">
+            <span>हिंदी टाइपिंग-HI</span>
+        </label>
+        <label for="telugu">
+            <input type="radio" id="telugu" name="language">
+            <span>తెలుగు-TE</span>
+        </label>
+        <label for="kanada">
+            <input type="radio" id="kanada" name="language">
+            <span>ಕನ್ನಡ-KN</span>
+        </label>
+        <label for="malayalam">
+            <input type="radio" id="malayalam" name="language">
+            <span>മലയാളം-ML</span>
+        </label>
+        <label for="bengal">
+            <input type="radio" id="bengal" name="language">
+            <span>বাংলা-BN</span>
+        </label>
+        <label for="marathi">
+            <input type="radio" id="marathi" name="language">
+            <span>मराठी-MR</span>
+        </label>
+        <a href="#" class="Learnmore">Learn More</a>
+        <p><img src="./images/flag2.png" alt="">You are shopping on Amazon.in</p>
+        <a href="#">Change country/region</a>
+    </form>
+</div>
+
+<div class="account-popup-overlay"></div>
+<div class="account-popup">
+    <div class="account-signinbtn">
+        <button><a href="register.html">Sign in</a></button>
+        <p>New Customer?<a href="">Start here</a></p>
+    </div>
+    <div class="lists-and-accounts">
+        <div class="lists">
+                <h1>Your Lists</h1>
+                <p>Creat a Wish List</p>
+                <p>Wish from Any Website</p>
+                <p>Baby Wishlist</p>
+                <p>Discover Your Style</p>
+                <p>Explore Showroom</p>
+        </div>
+        <div class="your-account">
+            <h1>Your Account</h1>
+            <p>Your Account</p>
+            <p>Your Orders</p>
+            <p>Your Wish List</p>
+            <p>Your Recommendations</p>
+            <p>Your Prime Membership</p>
+            <p>Your Prime Video</p>
+            <p>Your Subscribe & Save Items</p>
+            <p>Memberships & Subscriptions</p>
+            <p>Your Seller Account</p>
+            <p>Manage Your Content and Devices</p>
+            <p>Your Free Amazon Business Account</p>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="side-nav-overlay"></div>
+<div class="side-nav-logo">
+    <img src="./images/side-logo.png" alt="logo">
+    <h3>Hello, sign in</h3>
+    <i class="fa-solid fa-xmark side-nav-xmark"></i>
+</div>
+<div class="side-nav-bars">
+    <div class="side-nav-content">
+        <div class="trending">
+            <h3>Trending</h3>
+            <p>Best Sellers</p>
+            <p>New Releases</p>
+            <p>Movers and Shakers</p>
+        </div>
+        <div class="trending">
+            <h3>Digital Content and Devices</h3>
+            <p>Echo & Alexa</p>
+            <p>Fire TV</p>
+            <p>Kindle E-Reader & eBooks</p>
+            <p>Audiable Audiobooks</p>
+            <p>Amazon Prime video</p>
+            <p>Amazon Prime Music</p>
+        </div>
+        <div class="trending">
+            <h3>Shop by Category</h3>
+            <p>Mobiles,Computers</p>
+            <p>Tv,Appliances,Electronics</p>
+            <p>Men's Fashion</p>
+            <p>Women's Fashion</p>
+            <p>See all <i class="fa-solid fa-caret-down"></i></p>
+        </div>
+        <div class="trending">
+            <h3>Programs & Features</h3>
+            <p>Amazon Pay</p>
+            <p>Gift Cards & Mobile Reacharges</p>
+            <p>Amazon Launchpad</p>
+            <p>Amazon Business</p>
+            <p>See all <i class="fa-solid fa-caret-down"></i></p>
+        </div>
+        <div class="trending">
+            <h3>Help & Settings</h3>
+            <p>Your Account</p>
+            <p>Customer Service</p>
+            <p>Sign in</p>
+        </div>
+    </div>
+</div>
+
+<div class="primeimg">
+    <img src="./images/primeimg.jpg" alt="primeimg">
+</div>
    <script src="index.js"></script>
 </body>
 </html>
