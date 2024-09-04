@@ -258,7 +258,6 @@ body{
     text-align: center;
     margin: 10px;
     margin-top: 20px;
-    /* box-shadow: 0px 0px 10px #9e9e9e; */
 }
 .foot1-content{
     border-top: 1px solid #d3d1d1;
@@ -446,17 +445,6 @@ body{
     color: #fff;
     cursor: pointer;
 }
-.location-popup{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #444242;
-    z-index: 3;
-    opacity: 0.5;
-    display: none;
-}
 .location-overlay{
     position: absolute;
     top: 30%;
@@ -533,16 +521,6 @@ body{
     cursor: pointer;
     background-color: #ffcb1f;
 }
-/* .language-popup{
-    display: flex;
-    flex-direction: column;
-}
-.language-popup label{
-    color: #ebca14;
-}
-.language-popup input[type="radio"]{
-    color: #000000;
-} */
 
 .account-popup{
     position: absolute;
@@ -605,17 +583,6 @@ body{
     color: tomato;
     text-decoration: underline;
     cursor: pointer;
-}
-.account-popup-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #444242;
-    z-index: 4;
-    opacity: 0.5;
-    display: none;
 }
 .side-nav-xmark{
     position: relative;
@@ -824,17 +791,6 @@ a:hover{
 .Learnmore{
     margin-top: 10px;
 }
-.language-popup-overlay{
-    background-color: #4b535c;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    opacity: 0.4;
-    display: none;
-}
 .primeimg{
     position: absolute;
     top: 15%;
@@ -851,56 +807,25 @@ a:hover{
     width: 300px;
     height: 300px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.overlays{
+    background-color: #4b535c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.5;
+    display: none;
+}
+.location-popup-overlays-new{
+    background-color: #4b535c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.5;
+    display: none;
+}
